@@ -1,0 +1,71 @@
+/*
+Theme Name: HDCarousel
+Author: Harmonic Design
+Author URI: https://harmonicdesign.ca
+*/
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #4a4a4a;
+  font-family: sans-serif;
+  background: #faefee;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  padding: 4rem 0;
+}
+
+section {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* Carousel CSS Starts */
+.hdcarousel_wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+}
+
+.hdcarousel {
+  position: relative;
+  overflow-x: clip;
+}
+
+.hdcarousel_item {
+  position: absolute;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #999;
+  background: #eee;
+  top: 0;
+  transition: all ease-in-out 800ms;
+}
